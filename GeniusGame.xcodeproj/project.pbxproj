@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF6386DF20FD0EEC005C99EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6386DE20FD0EEC005C99EB /* AppDelegate.swift */; };
+		AF6386E120FD0EEC005C99EB /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = AF6386E020FD0EEC005C99EB /* GameScene.sks */; };
+		AF6386E320FD0EEC005C99EB /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = AF6386E220FD0EEC005C99EB /* Actions.sks */; };
+		AF6386E520FD0EEC005C99EB /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6386E420FD0EEC005C99EB /* GameScene.swift */; };
+		AF6386E720FD0EEC005C99EB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6386E620FD0EEC005C99EB /* GameViewController.swift */; };
+		AF6386EA20FD0EEC005C99EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF6386E820FD0EEC005C99EB /* Main.storyboard */; };
+		AF6386EC20FD0EEC005C99EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF6386EB20FD0EEC005C99EB /* Assets.xcassets */; };
+		AF6386EF20FD0EEC005C99EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF6386ED20FD0EEC005C99EB /* LaunchScreen.storyboard */; };
+		AF6386FA20FD0EEC005C99EB /* GeniusGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6386F920FD0EEC005C99EB /* GeniusGameTests.swift */; };
+		AF63870520FD0EEC005C99EB /* GeniusGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF63870420FD0EEC005C99EB /* GeniusGameUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF6386F620FD0EEC005C99EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF6386D320FD0EEC005C99EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF6386DA20FD0EEC005C99EB;
+			remoteInfo = GeniusGame;
+		};
+		AF63870120FD0EEC005C99EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF6386D320FD0EEC005C99EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF6386DA20FD0EEC005C99EB;
+			remoteInfo = GeniusGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AF6386DB20FD0EEC005C99EB /* GeniusGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeniusGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF6386DE20FD0EEC005C99EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF6386E020FD0EEC005C99EB /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		AF6386E220FD0EEC005C99EB /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		AF6386E420FD0EEC005C99EB /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		AF6386E620FD0EEC005C99EB /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		AF6386E920FD0EEC005C99EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF6386EB20FD0EEC005C99EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF6386EE20FD0EEC005C99EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF6386F020FD0EEC005C99EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF6386F520FD0EEC005C99EB /* GeniusGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeniusGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF6386F920FD0EEC005C99EB /* GeniusGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeniusGameTests.swift; sourceTree = "<group>"; };
+		AF6386FB20FD0EEC005C99EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF63870020FD0EEC005C99EB /* GeniusGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeniusGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF63870420FD0EEC005C99EB /* GeniusGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeniusGameUITests.swift; sourceTree = "<group>"; };
+		AF63870620FD0EEC005C99EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF6386D820FD0EEC005C99EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF6386F220FD0EEC005C99EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF6386FD20FD0EEC005C99EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF6386D220FD0EEC005C99EB = {
+			isa = PBXGroup;
+			children = (
+				AF6386DD20FD0EEC005C99EB /* GeniusGame */,
+				AF6386F820FD0EEC005C99EB /* GeniusGameTests */,
+				AF63870320FD0EEC005C99EB /* GeniusGameUITests */,
+				AF6386DC20FD0EEC005C99EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF6386DC20FD0EEC005C99EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF6386DB20FD0EEC005C99EB /* GeniusGame.app */,
+				AF6386F520FD0EEC005C99EB /* GeniusGameTests.xctest */,
+				AF63870020FD0EEC005C99EB /* GeniusGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF6386DD20FD0EEC005C99EB /* GeniusGame */ = {
+			isa = PBXGroup;
+			children = (
+				AF6386DE20FD0EEC005C99EB /* AppDelegate.swift */,
+				AF6386E020FD0EEC005C99EB /* GameScene.sks */,
+				AF6386E220FD0EEC005C99EB /* Actions.sks */,
+				AF6386E420FD0EEC005C99EB /* GameScene.swift */,
+				AF6386E620FD0EEC005C99EB /* GameViewController.swift */,
+				AF6386E820FD0EEC005C99EB /* Main.storyboard */,
+				AF6386EB20FD0EEC005C99EB /* Assets.xcassets */,
+				AF6386ED20FD0EEC005C99EB /* LaunchScreen.storyboard */,
+				AF6386F020FD0EEC005C99EB /* Info.plist */,
+			);
+			path = GeniusGame;
+			sourceTree = "<group>";
+		};
+		AF6386F820FD0EEC005C99EB /* GeniusGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF6386F920FD0EEC005C99EB /* GeniusGameTests.swift */,
+				AF6386FB20FD0EEC005C99EB /* Info.plist */,
+			);
+			path = GeniusGameTests;
+			sourceTree = "<group>";
+		};
+		AF63870320FD0EEC005C99EB /* GeniusGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AF63870420FD0EEC005C99EB /* GeniusGameUITests.swift */,
+				AF63870620FD0EEC005C99EB /* Info.plist */,
+			);
+			path = GeniusGameUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF6386DA20FD0EEC005C99EB /* GeniusGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF63870920FD0EEC005C99EB /* Build configuration list for PBXNativeTarget "GeniusGame" */;
+			buildPhases = (
+				AF6386D720FD0EEC005C99EB /* Sources */,
+				AF6386D820FD0EEC005C99EB /* Frameworks */,
+				AF6386D920FD0EEC005C99EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeniusGame;
+			productName = GeniusGame;
+			productReference = AF6386DB20FD0EEC005C99EB /* GeniusGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF6386F420FD0EEC005C99EB /* GeniusGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF63870C20FD0EEC005C99EB /* Build configuration list for PBXNativeTarget "GeniusGameTests" */;
+			buildPhases = (
+				AF6386F120FD0EEC005C99EB /* Sources */,
+				AF6386F220FD0EEC005C99EB /* Frameworks */,
+				AF6386F320FD0EEC005C99EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF6386F720FD0EEC005C99EB /* PBXTargetDependency */,
+			);
+			name = GeniusGameTests;
+			productName = GeniusGameTests;
+			productReference = AF6386F520FD0EEC005C99EB /* GeniusGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AF6386FF20FD0EEC005C99EB /* GeniusGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF63870F20FD0EEC005C99EB /* Build configuration list for PBXNativeTarget "GeniusGameUITests" */;
+			buildPhases = (
+				AF6386FC20FD0EEC005C99EB /* Sources */,
+				AF6386FD20FD0EEC005C99EB /* Frameworks */,
+				AF6386FE20FD0EEC005C99EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF63870220FD0EEC005C99EB /* PBXTargetDependency */,
+			);
+			name = GeniusGameUITests;
+			productName = GeniusGameUITests;
+			productReference = AF63870020FD0EEC005C99EB /* GeniusGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF6386D320FD0EEC005C99EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = campstud;
+				TargetAttributes = {
+					AF6386DA20FD0EEC005C99EB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					AF6386F420FD0EEC005C99EB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AF6386DA20FD0EEC005C99EB;
+					};
+					AF6386FF20FD0EEC005C99EB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AF6386DA20FD0EEC005C99EB;
+					};
+				};
+			};
+			buildConfigurationList = AF6386D620FD0EEC005C99EB /* Build configuration list for PBXProject "GeniusGame" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF6386D220FD0EEC005C99EB;
+			productRefGroup = AF6386DC20FD0EEC005C99EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF6386DA20FD0EEC005C99EB /* GeniusGame */,
+				AF6386F420FD0EEC005C99EB /* GeniusGameTests */,
+				AF6386FF20FD0EEC005C99EB /* GeniusGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF6386D920FD0EEC005C99EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF6386EA20FD0EEC005C99EB /* Main.storyboard in Resources */,
+				AF6386E120FD0EEC005C99EB /* GameScene.sks in Resources */,
+				AF6386EC20FD0EEC005C99EB /* Assets.xcassets in Resources */,
+				AF6386EF20FD0EEC005C99EB /* LaunchScreen.storyboard in Resources */,
+				AF6386E320FD0EEC005C99EB /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF6386F320FD0EEC005C99EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF6386FE20FD0EEC005C99EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF6386D720FD0EEC005C99EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF6386E520FD0EEC005C99EB /* GameScene.swift in Sources */,
+				AF6386E720FD0EEC005C99EB /* GameViewController.swift in Sources */,
+				AF6386DF20FD0EEC005C99EB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF6386F120FD0EEC005C99EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF6386FA20FD0EEC005C99EB /* GeniusGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF6386FC20FD0EEC005C99EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF63870520FD0EEC005C99EB /* GeniusGameUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF6386F720FD0EEC005C99EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF6386DA20FD0EEC005C99EB /* GeniusGame */;
+			targetProxy = AF6386F620FD0EEC005C99EB /* PBXContainerItemProxy */;
+		};
+		AF63870220FD0EEC005C99EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF6386DA20FD0EEC005C99EB /* GeniusGame */;
+			targetProxy = AF63870120FD0EEC005C99EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF6386E820FD0EEC005C99EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF6386E920FD0EEC005C99EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF6386ED20FD0EEC005C99EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF6386EE20FD0EEC005C99EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF63870720FD0EEC005C99EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF63870820FD0EEC005C99EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF63870A20FD0EEC005C99EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GeniusGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CSE.GeniusGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF63870B20FD0EEC005C99EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GeniusGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CSE.GeniusGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AF63870D20FD0EEC005C99EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GeniusGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CSE.GeniusGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeniusGame.app/GeniusGame";
+			};
+			name = Debug;
+		};
+		AF63870E20FD0EEC005C99EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GeniusGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CSE.GeniusGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeniusGame.app/GeniusGame";
+			};
+			name = Release;
+		};
+		AF63871020FD0EEC005C99EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GeniusGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CSE.GeniusGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GeniusGame;
+			};
+			name = Debug;
+		};
+		AF63871120FD0EEC005C99EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GeniusGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CSE.GeniusGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GeniusGame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF6386D620FD0EEC005C99EB /* Build configuration list for PBXProject "GeniusGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF63870720FD0EEC005C99EB /* Debug */,
+				AF63870820FD0EEC005C99EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF63870920FD0EEC005C99EB /* Build configuration list for PBXNativeTarget "GeniusGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF63870A20FD0EEC005C99EB /* Debug */,
+				AF63870B20FD0EEC005C99EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF63870C20FD0EEC005C99EB /* Build configuration list for PBXNativeTarget "GeniusGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF63870D20FD0EEC005C99EB /* Debug */,
+				AF63870E20FD0EEC005C99EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF63870F20FD0EEC005C99EB /* Build configuration list for PBXNativeTarget "GeniusGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF63871020FD0EEC005C99EB /* Debug */,
+				AF63871120FD0EEC005C99EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF6386D320FD0EEC005C99EB /* Project object */;
+}
