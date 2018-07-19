@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF0C050A210130780063E8D0 /* FinalBossTheme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AF0C0509210130780063E8D0 /* FinalBossTheme.mp3 */; };
 		AF6386DF20FD0EEC005C99EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6386DE20FD0EEC005C99EB /* AppDelegate.swift */; };
 		AF6386E120FD0EEC005C99EB /* DoodleScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = AF6386E020FD0EEC005C99EB /* DoodleScene.sks */; };
 		AF6386E320FD0EEC005C99EB /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = AF6386E220FD0EEC005C99EB /* Actions.sks */; };
@@ -17,6 +18,9 @@
 		AF6386EF20FD0EEC005C99EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF6386ED20FD0EEC005C99EB /* LaunchScreen.storyboard */; };
 		AF6386FA20FD0EEC005C99EB /* GeniusGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6386F920FD0EEC005C99EB /* GeniusGameTests.swift */; };
 		AF63870520FD0EEC005C99EB /* GeniusGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF63870420FD0EEC005C99EB /* GeniusGameUITests.swift */; };
+		AF6C3F14210103C400003434 /* LossScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = AF6C3F13210103C400003434 /* LossScene.sks */; };
+		AF6C3F162101054100003434 /* LossScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6C3F152101054100003434 /* LossScene.swift */; };
+		AF6C3F1821012A9E00003434 /* MovingPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6C3F1721012A9E00003434 /* MovingPlatform.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF0C0509210130780063E8D0 /* FinalBossTheme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FinalBossTheme.mp3; sourceTree = "<group>"; };
 		AF6386DB20FD0EEC005C99EB /* GeniusGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeniusGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF6386DE20FD0EEC005C99EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF6386E020FD0EEC005C99EB /* DoodleScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = DoodleScene.sks; sourceTree = "<group>"; };
@@ -53,6 +58,9 @@
 		AF63870020FD0EEC005C99EB /* GeniusGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeniusGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF63870420FD0EEC005C99EB /* GeniusGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeniusGameUITests.swift; sourceTree = "<group>"; };
 		AF63870620FD0EEC005C99EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF6C3F13210103C400003434 /* LossScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LossScene.sks; sourceTree = "<group>"; };
+		AF6C3F152101054100003434 /* LossScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LossScene.swift; sourceTree = "<group>"; };
+		AF6C3F1721012A9E00003434 /* MovingPlatform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingPlatform.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +119,11 @@
 				AF6386E820FD0EEC005C99EB /* Main.storyboard */,
 				AF6386EB20FD0EEC005C99EB /* Assets.xcassets */,
 				AF6386ED20FD0EEC005C99EB /* LaunchScreen.storyboard */,
+				AF0C0509210130780063E8D0 /* FinalBossTheme.mp3 */,
 				AF6386F020FD0EEC005C99EB /* Info.plist */,
+				AF6C3F13210103C400003434 /* LossScene.sks */,
+				AF6C3F152101054100003434 /* LossScene.swift */,
+				AF6C3F1721012A9E00003434 /* MovingPlatform.swift */,
 			);
 			path = GeniusGame;
 			sourceTree = "<group>";
@@ -243,7 +255,9 @@
 			files = (
 				AF6386EA20FD0EEC005C99EB /* Main.storyboard in Resources */,
 				AF6386E120FD0EEC005C99EB /* DoodleScene.sks in Resources */,
+				AF0C050A210130780063E8D0 /* FinalBossTheme.mp3 in Resources */,
 				AF6386EC20FD0EEC005C99EB /* Assets.xcassets in Resources */,
+				AF6C3F14210103C400003434 /* LossScene.sks in Resources */,
 				AF6386EF20FD0EEC005C99EB /* LaunchScreen.storyboard in Resources */,
 				AF6386E320FD0EEC005C99EB /* Actions.sks in Resources */,
 			);
@@ -271,6 +285,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF6386E520FD0EEC005C99EB /* DoodleScene.swift in Sources */,
+				AF6C3F1821012A9E00003434 /* MovingPlatform.swift in Sources */,
+				AF6C3F162101054100003434 /* LossScene.swift in Sources */,
 				AF6386E720FD0EEC005C99EB /* GameViewController.swift in Sources */,
 				AF6386DF20FD0EEC005C99EB /* AppDelegate.swift in Sources */,
 			);
