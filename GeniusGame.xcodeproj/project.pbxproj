@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF03A42C210251E900E68B31 /* StartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = AF03A42B210251E900E68B31 /* StartScene.sks */; };
+		AF03A42E2102538100E68B31 /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF03A42D2102538100E68B31 /* StartScene.swift */; };
 		AF0C050A210130780063E8D0 /* FinalBossTheme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AF0C0509210130780063E8D0 /* FinalBossTheme.mp3 */; };
 		AF6386DF20FD0EEC005C99EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6386DE20FD0EEC005C99EB /* AppDelegate.swift */; };
 		AF6386E120FD0EEC005C99EB /* DoodleScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = AF6386E020FD0EEC005C99EB /* DoodleScene.sks */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF03A42B210251E900E68B31 /* StartScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StartScene.sks; sourceTree = "<group>"; };
+		AF03A42D2102538100E68B31 /* StartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
 		AF0C0509210130780063E8D0 /* FinalBossTheme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FinalBossTheme.mp3; sourceTree = "<group>"; };
 		AF6386DB20FD0EEC005C99EB /* GeniusGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeniusGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF6386DE20FD0EEC005C99EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +115,8 @@
 		AF6386DD20FD0EEC005C99EB /* GeniusGame */ = {
 			isa = PBXGroup;
 			children = (
+				AF03A42B210251E900E68B31 /* StartScene.sks */,
+				AF03A42D2102538100E68B31 /* StartScene.swift */,
 				AF6386DE20FD0EEC005C99EB /* AppDelegate.swift */,
 				AF6386E020FD0EEC005C99EB /* DoodleScene.sks */,
 				AF6386E220FD0EEC005C99EB /* Actions.sks */,
@@ -259,6 +265,7 @@
 				AF6386EC20FD0EEC005C99EB /* Assets.xcassets in Resources */,
 				AF6C3F14210103C400003434 /* LossScene.sks in Resources */,
 				AF6386EF20FD0EEC005C99EB /* LaunchScreen.storyboard in Resources */,
+				AF03A42C210251E900E68B31 /* StartScene.sks in Resources */,
 				AF6386E320FD0EEC005C99EB /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF6386E520FD0EEC005C99EB /* DoodleScene.swift in Sources */,
+				AF03A42E2102538100E68B31 /* StartScene.swift in Sources */,
 				AF6C3F1821012A9E00003434 /* MovingPlatform.swift in Sources */,
 				AF6C3F162101054100003434 /* LossScene.swift in Sources */,
 				AF6386E720FD0EEC005C99EB /* GameViewController.swift in Sources */,
@@ -455,10 +463,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BFM9KMERYP;
+				DEVELOPMENT_TEAM = DM4L7WJQQT;
 				INFOPLIST_FILE = GeniusGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = CSE.GeniusGame;
+				PRODUCT_BUNDLE_IDENTIFIER = GeniusGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -470,10 +479,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BFM9KMERYP;
+				DEVELOPMENT_TEAM = DM4L7WJQQT;
 				INFOPLIST_FILE = GeniusGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = CSE.GeniusGame;
+				PRODUCT_BUNDLE_IDENTIFIER = GeniusGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

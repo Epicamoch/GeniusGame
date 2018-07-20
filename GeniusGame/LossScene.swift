@@ -26,6 +26,7 @@ class LossScene: SKScene {
         tryAgain.position.x = self.size.width/2
         
         scoreLabel = self.childNode(withName: "//score") as! SKLabelNode
+        scoreLabel.position.x = self.size.width/2
         scoreLabel.text = String(score)
     }
     

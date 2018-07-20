@@ -31,7 +31,9 @@ class DoodleScene: SKScene, SKPhysicsContactDelegate {
     var motionManager : CMMotionManager!
     private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
-    let PLATFORM_SPEED : CGFloat = 200
+    var PLATFORM_SPEED : CGFloat = 500
+    let MAX_PLATFORM_SPEED : CGFloat = 4000
+    let PLATFORM_CHANCE : CGFloat = 0.5
     
     // Sprites
     var doodle : SKSpriteNode!
@@ -41,7 +43,7 @@ class DoodleScene: SKScene, SKPhysicsContactDelegate {
     var background1 : SKSpriteNode!
     var background2 : SKSpriteNode!
     var platforms : Set<SKSpriteNode> = []
-    var maxPlatforms = 15
+    var maxPlatforms = 20
     let minPlatforms = 4
     var maxHeightNode : SKSpriteNode?
     var scoreLabel : SKLabelNode!
@@ -153,7 +155,7 @@ class DoodleScene: SKScene, SKPhysicsContactDelegate {
                 let yPosition = max(maxHeight + min(maxDistance, self.size.height / CGFloat(maxPlatforms)), self.size.height)
                 
                 let point = CGPoint(x: xPosition, y: yPosition)
-                if (randomFloat() <= 0.2) {
+                if (randomFloat() <= PLATFORM_CHANCE) {
                     createPlatform(ofType: "Moving", atPoint: point)
                 } else {
                     createPlatform(ofType: "Normal", atPoint: point)
@@ -170,10 +172,13 @@ class DoodleScene: SKScene, SKPhysicsContactDelegate {
         } else if type == "Moving" {
             platform = sampleMovingPlatform.copy() as! SKSpriteNode
             if randomFloat() <= 0.5 {
-                platform.physicsBody?.velocity.dx = PLATFORM_SPEED
+                
+            
+                platform.physicsBody?.velocity.dx = getPlatformSpeed()
             } else {
-                platform.physicsBody?.velocity.dx = -PLATFORM_SPEED
+                platform.physicsBody?.velocity.dx = -getPlatformSpeed()
             }
+            print("Platform Speed: " + String(Float(getPlatformSpeed())))
         }
         platform.anchorPoint = CGPoint(x: 0, y: 0)
         platform.position = point
@@ -199,7 +204,7 @@ class DoodleScene: SKScene, SKPhysicsContactDelegate {
         // Update score
         if doodle.position.y > self.size.height/2 {
             score += Int(doodle.position.y - self.size.height/2)
-            scoreLabel.text = String(score/10)
+            scoreLabel.text = String(score)
         }
         
         if let accelerometerData = motionManager.accelerometerData {
@@ -252,9 +257,9 @@ class DoodleScene: SKScene, SKPhysicsContactDelegate {
             } else {
                 // If the platform is moving and is going off screen
                 if (platform.position.x <= 0) {
-                    platform.physicsBody?.velocity.dx = PLATFORM_SPEED
+                    platform.physicsBody?.velocity.dx = getPlatformSpeed()
                 } else if (platform.position.x >= self.size.width - platform.size.width){
-                    platform.physicsBody?.velocity.dx = -PLATFORM_SPEED
+                    platform.physicsBody?.velocity.dx = -getPlatformSpeed()
 
                 }
             }
@@ -284,6 +289,10 @@ class DoodleScene: SKScene, SKPhysicsContactDelegate {
         }
     }
     
+    func getPlatformSpeed() -> CGFloat {
+        return min(PLATFORM_SPEED * CGFloat(score)/CGFloat(10000), MAX_PLATFORM_SPEED)
+    }
+    
     func performBackgroundCheck() -> Bool{
         if self.background1.position.y + self.background1.size.height < 0 {
             self.background1.position.y = self.background2.position.y + self.background2.size.height
@@ -301,7 +310,7 @@ class DoodleScene: SKScene, SKPhysicsContactDelegate {
         if let scene = SKScene(fileNamed: "LossScene") as? LossScene {
             // Set the scale mode to scale to fit the window
             scene.scaleMode = .aspectFill
-            scene.score = score/10
+            scene.score = score
             
             // Present the scene
             self.view?.presentScene(scene, transition: SKTransition.doorsCloseHorizontal(withDuration: 1.0))
