@@ -54,16 +54,50 @@ class StartScene: SKScene {
     }
     
     func presentJumpGame() {
-        if let scene = SKScene(fileNamed: "DoodleScene") {
-            scene.scaleMode = .aspectFill
-            self.view?.presentScene(scene, transition: SKTransition.fade(with: UIColor.blue, duration: 1.0))
+        if let view = self.view {
+            // Load the SKScene from 'GameScene.sks'
+            if let scene = SKScene(fileNamed: "DoodleScene") as? GameScene {
+                
+                
+                // Set the scale mode to scale to fit the window
+                scene.size = view.bounds.size
+                scene.scaleMode = .aspectFill
+                
+                
+                // Present the scene
+                view.presentScene(scene, transition: SKTransition.crossFade(withDuration: 1.0))
+            }
+            
+            view.ignoresSiblingOrder = true
+            view.showsFPS = true
+            view.showsNodeCount = true
+            
+            // Create shape node to use during mouse interaction
+            
         }
     }
     
     func presentRockPaperScissorsGame() {
-        if let scene = SKScene(fileNamed: "DoodleScene") {
-            scene.scaleMode = .aspectFill
-            self.view?.presentScene(scene, transition: SKTransition.fade(with: UIColor.blue, duration: 1.0))
+        if let view = self.view {
+            // Load the SKScene from 'GameScene.sks'
+            if let scene = SKScene(fileNamed: "GameScene") as? GameScene {
+                
+                
+                // Set the scale mode to scale to fit the window
+                scene.size = view.bounds.size
+                scene.scaleMode = .aspectFill
+                
+                
+                // Present the scene
+                view.presentScene(scene, transition: SKTransition.crossFade(withDuration: 1.0))
+            }
+            
+            view.ignoresSiblingOrder = true
+            view.showsFPS = true
+            view.showsNodeCount = true
+            
+            // Create shape node to use during mouse interaction
+            
         }
     }
 

@@ -67,7 +67,7 @@ class DoodleScene: SKScene, SKPhysicsContactDelegate {
         createAssets()
         
         // Load music
-        self.run(SKAction.repeatForever(SKAction.playSoundFileNamed("FinalBossTheme.mp3", waitForCompletion: true)))
+        self.run(SKAction.repeatForever(SKAction.playSoundFileNamed("FinalBossTheme.mp3", waitForCompletion: true)), withKey: "Music")
         
         initalizePlatforms()
         

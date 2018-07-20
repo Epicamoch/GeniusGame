@@ -23,6 +23,11 @@
 		AF6C3F14210103C400003434 /* LossScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = AF6C3F13210103C400003434 /* LossScene.sks */; };
 		AF6C3F162101054100003434 /* LossScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6C3F152101054100003434 /* LossScene.swift */; };
 		AF6C3F1821012A9E00003434 /* MovingPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6C3F1721012A9E00003434 /* MovingPlatform.swift */; };
+		AF83E677210272D4007AEAD1 /* LossScene2.sks in Resources */ = {isa = PBXBuildFile; fileRef = AF83E675210272D4007AEAD1 /* LossScene2.sks */; };
+		AF83E678210272D4007AEAD1 /* LossScene2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF83E676210272D4007AEAD1 /* LossScene2.swift */; };
+		AF83E67C210272EB007AEAD1 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF83E679210272EA007AEAD1 /* GameScene.swift */; };
+		AF83E67D210272EB007AEAD1 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = AF83E67A210272EA007AEAD1 /* GameScene.sks */; };
+		AF83E67E210272EB007AEAD1 /* Explosion.atlas in Resources */ = {isa = PBXBuildFile; fileRef = AF83E67B210272EB007AEAD1 /* Explosion.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +70,11 @@
 		AF6C3F13210103C400003434 /* LossScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LossScene.sks; sourceTree = "<group>"; };
 		AF6C3F152101054100003434 /* LossScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LossScene.swift; sourceTree = "<group>"; };
 		AF6C3F1721012A9E00003434 /* MovingPlatform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingPlatform.swift; sourceTree = "<group>"; };
+		AF83E675210272D4007AEAD1 /* LossScene2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LossScene2.sks; sourceTree = "<group>"; };
+		AF83E676210272D4007AEAD1 /* LossScene2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LossScene2.swift; sourceTree = "<group>"; };
+		AF83E679210272EA007AEAD1 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		AF83E67A210272EA007AEAD1 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		AF83E67B210272EB007AEAD1 /* Explosion.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Explosion.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,12 +133,17 @@
 				AF6386E420FD0EEC005C99EB /* DoodleScene.swift */,
 				AF6386E620FD0EEC005C99EB /* GameViewController.swift */,
 				AF6386E820FD0EEC005C99EB /* Main.storyboard */,
+				AF83E67B210272EB007AEAD1 /* Explosion.atlas */,
+				AF83E67A210272EA007AEAD1 /* GameScene.sks */,
+				AF83E679210272EA007AEAD1 /* GameScene.swift */,
 				AF6386EB20FD0EEC005C99EB /* Assets.xcassets */,
 				AF6386ED20FD0EEC005C99EB /* LaunchScreen.storyboard */,
 				AF0C0509210130780063E8D0 /* FinalBossTheme.mp3 */,
 				AF6386F020FD0EEC005C99EB /* Info.plist */,
 				AF6C3F13210103C400003434 /* LossScene.sks */,
 				AF6C3F152101054100003434 /* LossScene.swift */,
+				AF83E675210272D4007AEAD1 /* LossScene2.sks */,
+				AF83E676210272D4007AEAD1 /* LossScene2.swift */,
 				AF6C3F1721012A9E00003434 /* MovingPlatform.swift */,
 			);
 			path = GeniusGame;
@@ -265,8 +280,11 @@
 				AF6386EC20FD0EEC005C99EB /* Assets.xcassets in Resources */,
 				AF6C3F14210103C400003434 /* LossScene.sks in Resources */,
 				AF6386EF20FD0EEC005C99EB /* LaunchScreen.storyboard in Resources */,
+				AF83E67E210272EB007AEAD1 /* Explosion.atlas in Resources */,
+				AF83E67D210272EB007AEAD1 /* GameScene.sks in Resources */,
 				AF03A42C210251E900E68B31 /* StartScene.sks in Resources */,
 				AF6386E320FD0EEC005C99EB /* Actions.sks in Resources */,
+				AF83E677210272D4007AEAD1 /* LossScene2.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,9 +311,11 @@
 			files = (
 				AF6386E520FD0EEC005C99EB /* DoodleScene.swift in Sources */,
 				AF03A42E2102538100E68B31 /* StartScene.swift in Sources */,
+				AF83E67C210272EB007AEAD1 /* GameScene.swift in Sources */,
 				AF6C3F1821012A9E00003434 /* MovingPlatform.swift in Sources */,
 				AF6C3F162101054100003434 /* LossScene.swift in Sources */,
 				AF6386E720FD0EEC005C99EB /* GameViewController.swift in Sources */,
+				AF83E678210272D4007AEAD1 /* LossScene2.swift in Sources */,
 				AF6386DF20FD0EEC005C99EB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
